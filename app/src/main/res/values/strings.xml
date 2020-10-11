@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">AndroidRxJavaOnKotlinEdu</string>
+    <string name="create_operator">Create Operator</string>
+    <!--    <string name="observable_transforming">Observable transforming</string>-->
+    <!--    <string name="alert_dialog_chain">Alert Dialog Chain</string>-->
+    <string name="completable">Completable</string>
+    <string name="flowable">Flowable</string>
+    <string name="maybe">Maybe</string>
+    <string name="observable">Observable</string>
+    <string name="single">Single</string>
+    <string name="click">click</string>
+    <!--    <string name="subscription">Subscription</string>-->
+
+    <!-- #1-->
+    <string-array name="RxTheme">
+        <item>Observable</item>
+    </string-array>
+
+    <!-- #2-->
+    <string-array name="ObservableTheme">
+        <item>Operator</item>
+        <item>Type</item>
+    </string-array>
+
+    <!-- #3-->
+    <string-array name="ObservableType">
+        <item>Completable</item>
+        <item>Flowable</item>
+        <item>Maybe</item>
+        <item>Observable</item>
+        <item>Single</item>
+    </string-array>
+
+    <string-array name="ObservableOperator">
+        <item>Create</item>
+    </string-array>
+
+    <!-- #4-->
+    <!--<string-array name="RxPublishSubject">
+        <item>AlertDialogChain</item>
+        <item>HandleSearchTextChange</item>
+    </string-array>-->
+
+</resources>

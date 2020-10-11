@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.sostrovsky.androidrxjavaonkotlinedu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".observable.ObservablesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".observable.type.ObservableTypesActivity"
+            android:parentActivityName=".observable.ObservablesActivity" />
+
+        <activity
+            android:name=".observable.type.completable.CompletableTypeActivity"
+            android:parentActivityName=".observable.type.ObservableTypesActivity" />
+        <activity
+            android:name=".observable.type.flowable.FlowableTypeActivity"
+            android:parentActivityName=".observable.type.ObservableTypesActivity" />
+        <activity
+            android:name=".observable.type.maybe.MaybeTypeActivity"
+            android:parentActivityName=".observable.type.ObservableTypesActivity" />
+        <activity
+            android:name=".observable.type.observable.ObservableTypeActivity"
+            android:parentActivityName=".observable.type.ObservableTypesActivity" />
+        <activity
+            android:name=".observable.type.single.SingleTypeActivity"
+            android:parentActivityName=".observable.type.ObservableTypesActivity" />
+        <activity
+            android:name=".observable.operator.ObservableOperatorsActivity"
+            android:parentActivityName=".observable.ObservablesActivity" />
+        <activity
+            android:name=".observable.operator.creating.create.example1.CreateOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.creating.create.example2.CreateOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+    </application>
+
+</manifest>
