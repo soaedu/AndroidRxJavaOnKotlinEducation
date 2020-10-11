@@ -2,7 +2,6 @@ package edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.creating.cre
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.R
 import io.reactivex.Observable
@@ -27,7 +26,7 @@ class CreateOperatorActivity : AppCompatActivity() {
     @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_operator)
+        setContentView(R.layout.activity_operator_create)
 
         val executor: ScheduledExecutorService = Executors.newSingleThreadScheduledExecutor()
 

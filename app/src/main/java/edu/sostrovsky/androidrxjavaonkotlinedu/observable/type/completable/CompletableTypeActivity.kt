@@ -14,7 +14,7 @@ class CompletableTypeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_completable_type)
+        setContentView(R.layout.activity_type_completable)
 
         printResultFromFunction()
     }

@@ -18,7 +18,7 @@ class CreateOperatorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_operator)
+        setContentView(R.layout.activity_operator_create)
 
         button = findViewById<Button>(R.id.btnClick).apply {
             setOnClickListener {

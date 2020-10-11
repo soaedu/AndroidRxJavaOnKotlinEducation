@@ -1,4 +1,4 @@
-package edu.sostrovsky.androidrxjavaonkotlinedu.observable.type
+package edu.sostrovsky.androidrxjavaonkotlinedu.disposable
 
 import android.content.Context
 import android.content.Intent
@@ -9,28 +9,30 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import edu.sostrovsky.androidrxjavaonkotlinedu.R
-import edu.sostrovsky.androidrxjavaonkotlinedu.observable.type.completable.CompletableTypeActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.disposable.type.composite_disposable.CompositeDisposableTypeActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.disposable.type.disposable.DisposableTypeActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.ObservableOperatorsActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.observable.type.ObservableTypesActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.type.flowable.FlowableTypeActivity
-import edu.sostrovsky.androidrxjavaonkotlinedu.observable.type.maybe.MaybeTypeActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.type.observable.ObservableTypeActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.type.single.SingleTypeActivity
 
-class ObservableTypesActivity : AppCompatActivity() {
+class DisposablesActivity : AppCompatActivity() {
     private var listView: ListView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_types_observable)
+        setContentView(R.layout.activity_disposables)
         setList()
     }
 
     private fun setList() {
-        val rxObservableTypes = resources.getStringArray(R.array.ObservableType)
+        val rxDisposableTypes = resources.getStringArray(R.array.DisposableTheme)
         val adapter = ArrayAdapter(
             this,
-            android.R.layout.simple_expandable_list_item_1, rxObservableTypes
+            android.R.layout.simple_expandable_list_item_1, rxDisposableTypes
         )
-        listView = findViewById(R.id.lvObservableTypeList)
+        listView = findViewById(R.id.lvDisposableThemeList)
         listView?.adapter = adapter
         setClickListener()
     }
@@ -39,13 +41,10 @@ class ObservableTypesActivity : AppCompatActivity() {
         listView?.onItemClickListener =
             AdapterView.OnItemClickListener { parent: AdapterView<*>?, view: View?, position: Int, id: Long ->
                 var intent: Intent? = null
-                val context: Context = this@ObservableTypesActivity
+                val context: Context = this@DisposablesActivity
                 when (position) {
-                    0 -> intent = Intent(context, CompletableTypeActivity::class.java)
-                    1 -> intent = Intent(context, FlowableTypeActivity::class.java)
-                    2 -> intent = Intent(context, MaybeTypeActivity::class.java)
-                    3 -> intent = Intent(context, ObservableTypeActivity::class.java)
-                    4 -> intent = Intent(context, SingleTypeActivity::class.java)
+                    0 -> intent = Intent(context, CompositeDisposableTypeActivity::class.java)
+                    1 -> intent = Intent(context, DisposableTypeActivity::class.java)
                 }
                 intent?.let { startActivity(it) }
             }

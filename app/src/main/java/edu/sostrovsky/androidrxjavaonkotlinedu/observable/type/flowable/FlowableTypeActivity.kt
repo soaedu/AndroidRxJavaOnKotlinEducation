@@ -12,7 +12,7 @@ class FlowableTypeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_flowable_type)
+        setContentView(R.layout.activity_type_flowable)
 
         // printThreeNumbers()
         printNumbersFromFunction()

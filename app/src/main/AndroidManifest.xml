@@ -21,9 +21,41 @@
             android:name=".observable.ObservablesActivity"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".observable.operator.ObservableOperatorsActivity"
+            android:parentActivityName=".observable.ObservablesActivity" />
+        <activity
+            android:name=".observable.operator.transforming.buffer.BufferOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.transforming.concat_map.ConcatmapOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.creating.create.example1.CreateOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.transforming.flat_map.FlatmapOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.transforming.group_by.GroupByOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.transforming.map.MapOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.transforming.scan.example1.ScanOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.transforming.scan.example2.ScanOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.transforming.switch_map.SwitchmapOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.creating.create.example2.CreateOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
             android:name=".observable.type.ObservableTypesActivity"
             android:parentActivityName=".observable.ObservablesActivity" />
-
         <activity
             android:name=".observable.type.completable.CompletableTypeActivity"
             android:parentActivityName=".observable.type.ObservableTypesActivity" />
@@ -39,15 +71,16 @@
         <activity
             android:name=".observable.type.single.SingleTypeActivity"
             android:parentActivityName=".observable.type.ObservableTypesActivity" />
-        <activity
-            android:name=".observable.operator.ObservableOperatorsActivity"
-            android:parentActivityName=".observable.ObservablesActivity" />
-        <activity
-            android:name=".observable.operator.creating.create.example1.CreateOperatorActivity"
-            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
-        <activity
-            android:name=".observable.operator.creating.create.example2.CreateOperatorActivity"
-            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
-    </application>
 
+        <activity
+            android:name=".disposable.DisposablesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".disposable.type.composite_disposable.CompositeDisposableTypeActivity"
+            android:parentActivityName=".disposable.DisposablesActivity" />
+        <activity
+            android:name=".disposable.type.disposable.DisposableTypeActivity"
+            android:parentActivityName=".disposable.DisposablesActivity" />
+
+    </application>
 </manifest>

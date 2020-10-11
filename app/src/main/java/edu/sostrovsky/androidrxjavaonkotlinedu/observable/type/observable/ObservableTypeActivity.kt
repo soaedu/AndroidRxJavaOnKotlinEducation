@@ -11,7 +11,7 @@ class ObservableTypeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_observable_type)
+        setContentView(R.layout.activity_type_observable)
 
         printThreeNumbers()
     }

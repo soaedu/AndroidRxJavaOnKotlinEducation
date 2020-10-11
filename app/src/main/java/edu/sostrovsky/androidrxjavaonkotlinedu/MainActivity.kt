@@ -9,6 +9,7 @@ import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.disposable.DisposablesActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.ObservablesActivity
 
 class MainActivity : AppCompatActivity() {
@@ -38,7 +39,8 @@ class MainActivity : AppCompatActivity() {
                 var intent: Intent? = null
                 val context: Context = this@MainActivity
                 when (position) {
-                    0 -> intent = Intent(context, ObservablesActivity::class.java)
+                    0 -> intent = Intent(context, DisposablesActivity::class.java)
+                    1 -> intent = Intent(context, ObservablesActivity::class.java)
                 }
                 intent?.let { startActivity(it) }
             }

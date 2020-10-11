@@ -4,27 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.creating.create.example1.CreateOperatorActivity">
+    tools:context="edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.transforming.buffer.BufferOperatorActivity">
 
     <TextView
-        android:id="@+id/tvCreateOperator"
+        android:id="@+id/tvBufferOperator"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/indent_16dp"
-        android:text="@string/create_operator"
+        android:text="@string/operator_buffer"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnClick"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/indent_16dp"
-        android:text="@string/click"
-        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
