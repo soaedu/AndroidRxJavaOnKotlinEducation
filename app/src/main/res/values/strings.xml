@@ -10,9 +10,13 @@
     <string name="operator_buffer">Buffer Operator</string>
     <string name="operator_concatmap">Concatmap Operator</string>
     <string name="operator_create">Create Operator</string>
+    <string name="operator_debounce">Debounce Operator</string>
+    <string name="operator_distinct">Distinct Operator</string>
+    <string name="operator_filter">Filter Operator</string>
     <string name="operator_flatmap">Flatmap Operator</string>
     <string name="operator_group_by">GroupBy Operator</string>
     <string name="operator_map">Map Operator</string>
+    <string name="operator_sample">Sample Operator</string>
     <string name="operator_scan">Scan Operator</string>
     <string name="operator_switchmap">Switchmap Operator</string>
     <string name="maybe">Maybe</string>
@@ -50,9 +54,13 @@
         <item>Buffer</item>
         <item>Concatmap</item>
         <item>Create</item>
+        <item>Debounce</item>
+        <item>Distinct</item>
+        <item>Filter</item>
         <item>Flatmap</item>
         <item>GroupBy</item>
         <item>Map</item>
+        <item>Sample</item>
         <item>Scan</item>
         <item>Switchmap</item>
     </string-array>

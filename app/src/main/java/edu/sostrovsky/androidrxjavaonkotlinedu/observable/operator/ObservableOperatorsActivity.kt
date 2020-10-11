@@ -10,6 +10,11 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import edu.sostrovsky.androidrxjavaonkotlinedu.R
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.creating.create.example1.CreateOperatorActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.filtering.debounce.DebounceOperatorActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.filtering.distinct.DistinctOperatorActivity
+// import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.filtering.filter.example1.FilterOperatorActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.filtering.filter.example2.FilterOperatorActivity
+import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.filtering.sample.SampleOperatorActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.transforming.buffer.BufferOperatorActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.transforming.concat_map.ConcatmapOperatorActivity
 import edu.sostrovsky.androidrxjavaonkotlinedu.observable.operator.transforming.flat_map.FlatmapOperatorActivity
@@ -48,11 +53,15 @@ class ObservableOperatorsActivity : AppCompatActivity() {
                     0 -> intent = Intent(context, BufferOperatorActivity::class.java)
                     1 -> intent = Intent(context, ConcatmapOperatorActivity::class.java)
                     2 -> intent = Intent(context, CreateOperatorActivity::class.java)
-                    3 -> intent = Intent(context, FlatmapOperatorActivity::class.java)
-                    4 -> intent = Intent(context, GroupByOperatorActivity::class.java)
-                    5 -> intent = Intent(context, MapOperatorActivity::class.java)
-                    6 -> intent = Intent(context, ScanOperatorActivity::class.java)
-                    7 -> intent = Intent(context, SwitchmapOperatorActivity::class.java)
+                    3 -> intent = Intent(context, DebounceOperatorActivity::class.java)
+                    4 -> intent = Intent(context, DistinctOperatorActivity::class.java)
+                    5 -> intent = Intent(context, FilterOperatorActivity::class.java)
+                    6 -> intent = Intent(context, FlatmapOperatorActivity::class.java)
+                    7 -> intent = Intent(context, GroupByOperatorActivity::class.java)
+                    8 -> intent = Intent(context, MapOperatorActivity::class.java)
+                    9 -> intent = Intent(context, SampleOperatorActivity::class.java)
+                    10 -> intent = Intent(context,ScanOperatorActivity::class.java)
+                    11-> intent = Intent(context, SwitchmapOperatorActivity::class.java)
                 }
                 intent?.let { startActivity(it) }
             }

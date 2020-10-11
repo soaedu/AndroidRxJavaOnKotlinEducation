@@ -33,6 +33,21 @@
             android:name=".observable.operator.creating.create.example1.CreateOperatorActivity"
             android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
         <activity
+            android:name=".observable.operator.filtering.debounce.DebounceOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.filtering.distinct.DistinctOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.filtering.filter.example1.FilterOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.filtering.filter.example2.FilterOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
+            android:name=".observable.operator.filtering.sample.SampleOperatorActivity"
+            android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
+        <activity
             android:name=".observable.operator.transforming.flat_map.FlatmapOperatorActivity"
             android:parentActivityName=".observable.operator.ObservableOperatorsActivity" />
         <activity
